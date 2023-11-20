@@ -24,4 +24,10 @@ function parosDarab(szamok:number[]):number {
     return counter;
 }
 
-console.log(parosDarab([1,2,3,45,6,7,8]))
+function fuggvenyhivasPalindrom(fuggveny:Function):boolean {
+    let szoveg:string = fuggveny;
+})
+
+function fuggveny() {
+    return "görög"
+}

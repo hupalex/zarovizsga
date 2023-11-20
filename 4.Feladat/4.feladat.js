@@ -20,4 +20,9 @@ function parosDarab(szamok) {
     }
     return counter;
 }
-console.log(parosDarab([1, 2, 3, 45, 6, 7, 8]));
+function fuggvenyhivasPalindrom(fuggveny) {
+    var szoveg = fuggveny;
+}
+function fuggveny() {
+    return "görög";
+}
