@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Unit teszt feladat</title>
+	<script type="text/javascript">
+	//Ide jön  a feladat megoldása...
+	function kivalogatParosOtven(szamok) {
+		let parosOtven = [];
+		for (let i = 0; i < szamok.length; i++) {
+			if (szamok[i] > 50 && szamok[i] % 2 == 0 ) {
+				parosOtven.push(szamok[i]);
+			}			
+		}
+		return parosOtven;
+	}
+
+	function aBetukSzamaDiv(){
+		let elsoDiv = document.querySelector("div").textContent;
+		let textArray = elsoDiv.split("");
+		let counter = 0;
+		for (let i = 0; i < textArray.length; i++) {
+			if (textArray[i] === "a") {
+				counter ++;
+			}
+		}
+		return counter;	
+	}
+
+	function osszeadasFeliras(osztaly, elsoSzam, masodikSzam) {
+		let eredmenyMutato = document.getElementsByClassName(osztaly)[0];
+		let eredmenyParagrafus = document.createElement("p");
+		eredmenyMutato.appendChild(eredmenyParagrafus);
+
+		if (typeof(elsoSzam) !== "number" || typeof(masodikSzam) !== "number") {
+			return "Kérlek CSAK számokat írj be!"
+		} else {	
+			let osszeg = elsoSzam + masodikSzam;
+			eredmenyParagrafus.textContent = `${elsoSzam}+${masodikSzam}=${osszeg}`;
+		}
+	}
+
+	
+	//<!-- Idáig -->
+	</script>
+	<script src="testBaseUnit.js"></script>
+</head>
+<body>
+    <div class="eredmeny"></div>
+	<hr>
+	<div id="testResult">
+	<h2>Tesztek</h2></div>
+</body>
+</html>
