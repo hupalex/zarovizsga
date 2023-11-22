@@ -25,9 +25,15 @@ function parosDarab(szamok:number[]):number {
 }
 
 function fuggvenyhivasPalindrom(fuggveny:Function):boolean {
-    let szoveg:string = fuggveny;
-})
+    let szoveg:Function = fuggveny();
+    let forditott:string = szoveg.toString().split('').reverse().join('');
+    
+    if (szoveg.toString() === forditott) {
+        return true
+    }
+    return false
+}
 
 function fuggveny() {
-    return "görög"
+    return "lehel";
 }

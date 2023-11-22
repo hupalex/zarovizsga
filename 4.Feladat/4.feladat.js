@@ -21,7 +21,12 @@ function parosDarab(szamok) {
     return counter;
 }
 function fuggvenyhivasPalindrom(fuggveny) {
-    var szoveg = fuggveny;
+    var szoveg = fuggveny();
+    var forditott = szoveg.toString().split('').reverse().join('');
+    if (szoveg.toString() === forditott) {
+        return true;
+    }
+    return false;
 }
 function fuggveny() {
     return "görög";
